@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Pasteleria La Divina</title>
+</head>
+<body>
+    <img src="./assets/img/Icon.png" alt="logo pasteleria">
+    <div>
+        <a href="Menu.html">Menu</a>
+        <a href="Inventario.html">Lista de Pedidos</a>
+    </div>
+    <h1 >Aqui puedes hacer tu pedido del Pastel</h1>
+    <form action="/accion.js" id="form1" method="post">
+        <div>
+            <label for="Nombre1"> Titular</label><br>
+            <input type="text" placeholder="Ingresa tu nombre" id="Nombre1" name="Nombre1">
+            <br><br>
+
+            <label for="correo1">Correo electronico</label><br>
+            <input type="email" placeholder="correo@dominio.com" id="correo1" name="correo1">
+            <br><br>
+
+            <label for="telefono1">Telefono</label><br>
+            <input type="tel" placeholder="Telefono a 10 Digitos" id="telefono1" name="telefono1" maxlength="10">
+            <br><br>
+
+            <label for="fecha1">¿Cuando desea su pedido?</label><br>
+            <input type="date" id="fecha1" name="fecha1"><br><br>
+            
+            <label for="Sabor">Escoge tu sabor</label><br>
+            <select id="Sabor" name="Sabor">
+                <option value="TresLeches">Pastel de Tres Leches</option>
+                <option value="Especialidad">Pastel Especialidad de la Casa</option>
+                <option value="Vainilla">Pastel de Vainilla</option>
+                <option value="Imposible">Pastel Imposible</option>
+                <option value="Fresa">Pastel de Fresa</option>                                
+                <option value="PayLimon">Pay de Limon</option>
+                <option value="Chocolate">Pastel de Chocolate</option>
+
+            </select>
+            <br><br>
+
+
+            <label for="decoracion">Escoge La Decoracion delpastel</label><br>
+            <select id="decoracion" name="decoracion">
+                <option value="Nombre">Nombre</option>
+                <option value="Velas">Velas</option>
+                <option value="Frutas">Frutas</option>
+                <option value="Chantilly">Chantilly</option>
+                <option value="Dibujo"> Dibujo</option>
+                <option value="Ninguno"> Ninguna</option>
+            </select><br><br>
+
+            <label for="Input2"> Ingresa la direccion de envio</label><br>
+            <input type="text" placeholder="Calle, numero int, num ext, C.P., Delegacion" id="Input2" name="Input2"><br><br>
+            <input type="button" id="boton1" name="boton1" value="Enviar pedido">
+            <br><br>
+            <input type="reset"><br>
+        </div>
+
+</body>
